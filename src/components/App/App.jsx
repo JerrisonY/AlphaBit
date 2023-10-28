@@ -10,7 +10,7 @@ function App() {
   return (
     <main>
       <Routes>
-        <Route path='/' element={LandingPage}/>
+        <Route path='/' element={<LandingPage />}/>
       </Routes>
     </main>
   )
