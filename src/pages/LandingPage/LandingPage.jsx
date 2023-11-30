@@ -3,6 +3,8 @@ import './LandingPage.css'
 import Features from '../../components/Features/Features'
 import LogoCloud from '../../components/LogoCloud/LogoCloud'
 import HeroSection from '../../components/HeroSection/HeroSection'
+import Stats from '../../components/Stats/Stats'
+
 
 function LandingPage() {
   return (
@@ -10,6 +12,7 @@ function LandingPage() {
       <HeroSection />
       <LogoCloud />
       <Features />
+      <Stats />
     </>
   )
 }
