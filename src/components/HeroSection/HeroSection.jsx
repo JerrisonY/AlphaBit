@@ -7,7 +7,7 @@ const navigation = [
   { name: 'Home', href: '#' },
   { name: 'Features', href: '#' },
   { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Join', href: '#' },
 ]
 
 export default function Example() {
