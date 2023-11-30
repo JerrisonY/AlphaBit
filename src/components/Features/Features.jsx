@@ -1,21 +1,21 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { GlobeAsiaAustraliaIcon, LockClosedIcon, ChatBubbleOvalLeftEllipsisIcon } from '@heroicons/react/20/solid'
 
 const features = [
   {
-    name: 'Push to deploy.',
+    name: 'Various ways to exchange.',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: CloudArrowUpIcon,
+      'In May 2023, AlphaBit became the first crypto company to be able to trade through Discord.',
+    icon: GlobeAsiaAustraliaIcon,
   },
   {
-    name: 'SSL certificates.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+    name: 'Your assets are secure.',
+    description: "We offer the most secure and multifaceted risk management programs designed to protect our customers' assets.",
     icon: LockClosedIcon,
   },
   {
-    name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ServerIcon,
+    name: 'Help when you need.',
+    description: "You can always contact our support team. 24 hours a day,  365 days a year. We're ready to assist.",
+    icon: ChatBubbleOvalLeftEllipsisIcon,
   },
 ]
 
@@ -27,10 +27,9 @@ export default function Example() {
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-blue-600">Deploy faster</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">A better workflow</p>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">The most trusted cryptocurrency exchange</p>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                iste dolor cupiditate blanditiis ratione.
+                Millions of users around the world trust us, and so can you. The proof is in our platform:
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
                 {features.map((feature) => (
