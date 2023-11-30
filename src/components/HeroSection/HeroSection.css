@@ -1,7 +1,7 @@
 .nav-container {
     position: fixed;
-    border-bottom: 1px solid rgb(236, 239, 241);
+    border-bottom: 1px solid #374151;
     width: 100%;
-    background-color: white;
+    background-color: #111827;
     z-index: 9999;
 }
