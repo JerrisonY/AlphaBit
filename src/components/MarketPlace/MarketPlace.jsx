@@ -4,7 +4,7 @@ import './MarketPlace.css'
 
 function MarketPlace() {
   return (
-    <div className='market-container'>
+    <div className='market-container' id='marketplace'>
     
         MarketPlace
     </div>

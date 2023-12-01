@@ -23,6 +23,17 @@ const prices = [
     'All crypto prices',
 ]
 
+const buyingGuides = [
+    'Buy Bitcoin',
+    'Buy Ethereum',
+    'Buy Dogecoin',
+    'Buy XRP',
+    'Buy Cardano',
+    'Buy Solana',
+    'Buy Litecoin',
+    'All crypto guides',
+]
+
 function Footer() {
   return (
     <>
@@ -31,27 +42,45 @@ function Footer() {
         </div>
         <footer className='footer-container'>
             <div className='f-first-c'>
-                First Section
+                <img src="/images/logo.svg" alt="" />
+                <p>Take your crypto <br /> trading to the next level.</p>
+                <button className='f-create-btn'><a href='#'>Create account</a></button>
+                <button className='f-sign-btn' ><a href='#'>Sign in</a></button>
             </div>
 
-            <div className='f-second-c'>
+            <ul className='f-second-c'>
+                <li className='footer-category'>Features</li>
                 {features.map((feature, index) => (
-                    <a key={index} href='#' className='footer-link'>
+                    <li><a key={index} href='#' className='footer-link'>
                         {feature}
-                    </a>  
+                    </a></li>  
                 ))}
-            </div>
+            </ul>
 
-            <div className='f-third-c'>
+            <ul className='f-third-c'>
+                <li className="footer-category">Browse Prices</li>
                 {prices.map((price, index) => (
-                    <a key={index} href='#' className='footer-link'>
+                    <li><a key={index} href='#' className='footer-link'>
                     {price}
-                </a>  
+                    </a></li>  
                 ))}
-            </div>
+            </ul>
 
-            <div className='f-fourth-c'>
-                Fourth Section
+            <ul className='f-fourth-c'>
+                <li className="footer-category">Buying Guides</li>
+                {buyingGuides.map((guide,index) => (
+                    <li><a key={index} href='#' className='footer-link'>
+                    {guide}
+                    </a></li>  
+                ))}
+            </ul>
+
+            <div className='footer-social-c'>
+                <p className='footer-category-community'>Community</p>
+                <a href='https://www.reddit.com/' target='_blank'><i class="fa-brands fa-reddit-alien"></i></a>
+                <a href='https://www.facebook.com/' target='_blank'><i class="fa-brands fa-facebook-f"></i></a>
+                <a href='https://discord.com/' target='_blank'><i class="fa-brands fa-discord"></i></a>
+                <a href='https://www.instagram.com/' target='_blank'><i class="fa-brands fa-instagram"></i></a>
             </div>
         </footer>
     </>

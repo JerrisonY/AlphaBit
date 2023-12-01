@@ -101,7 +101,7 @@ export default function Example() {
 
 
       
-      <div className="relative isolate px-6 pt-14 lg:px-8 bg-gray-900">
+      <div className="relative isolate px-6 pt-14 lg:px-8 bg-gray-900" id='home'>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-md leading-6 text-gray-400 ring-1 ring-gray-400 hover:ring-gray-400">
