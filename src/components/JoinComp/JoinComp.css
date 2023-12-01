@@ -1,0 +1,33 @@
+.cta-container {
+    background-color: #111827;
+    /* background-color: #1f2937; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.cta-header {
+    font-size: 3.5em;
+    text-align: center;
+    /* color: #2563eb; */
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+.cta-sub {
+    font-size: 1.5em;
+    line-height: 1.75em;
+    padding-bottom: 40px;
+    width: 40%;
+    text-align: center;
+}
+
+.cta-btn {
+    padding: 15px 20px;
+    font-weight: 600;
+    background-color: #2563eb;
+    border-radius: 10px;
+}

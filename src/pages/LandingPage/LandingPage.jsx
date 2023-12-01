@@ -6,6 +6,7 @@ import HeroSection from '../../components/HeroSection/HeroSection'
 import Stats from '../../components/Stats/Stats'
 import MarketPlace from '../../components/MarketPlace/MarketPlace'
 import JoinComp from '../../components/JoinComp/JoinComp'
+import Footer from '../../components/Footer/Footer'
 
 function LandingPage() {
   return (
@@ -13,9 +14,10 @@ function LandingPage() {
       <HeroSection />
       <LogoCloud />
       <MarketPlace />
-      <Features />
       <Stats />
+      <Features />
       <JoinComp />
+      <Footer />
     </>
   )
 }

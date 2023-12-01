@@ -1,0 +1,26 @@
+.tos-container {
+    background-color: #111827;
+    display: flex;
+    font-size: 0.7em;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1.5em;
+    padding: 30px 15vw;
+    text-align: center;
+}
+
+.footer-container {
+    background-color: #1f2937;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: white;
+    padding: 50px;
+}
+
+.f-first-c, 
+.f-second-c, 
+.f-third-c, 
+.f-fourth-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

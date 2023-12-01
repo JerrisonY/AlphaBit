@@ -5,8 +5,8 @@ import './HeroSection.css'
 
 const navigation = [
   { name: 'Home', href: '#' },
-  { name: 'Features', href: '#' },
   { name: 'Marketplace', href: '#' },
+  { name: 'Features', href: '#' },
   { name: 'Join', href: '#' },
 ]
 
