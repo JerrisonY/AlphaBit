@@ -1,17 +1,39 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import './HeroSection.css'
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Join', href: '#' },
+  { name: 'Home', href: '#home' },
+  { name: 'Marketplace', href: '#marketplace' },
+  { name: 'Features', href: '#features' },
+  { name: 'Join', href: '#join' },
 ]
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      setMobileMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // Execute after the component is mounted
+    const handleScroll = () => {
+      // Handle any scroll-related logic here if needed
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div className="bg-white">
@@ -39,7 +61,15 @@ export default function Example() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white hover:text-gray-500 transition duration-300">
+              <a 
+                key={item.name} 
+                href={item.href}  
+                className="text-sm font-semibold leading-6 text-white hover:text-gray-500 transition duration-300"
+                onClick={e => {
+                  e.preventDefault();
+                  scrollToSection(item.href.slice(1))
+                }}
+              >
                 {item.name}
               </a>
             ))}
