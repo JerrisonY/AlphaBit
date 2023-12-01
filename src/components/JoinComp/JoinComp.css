@@ -36,3 +36,11 @@
 .cta-btn:hover {
     background-color: #1e40af;
 }
+
+@media screen and (max-width: 1260px) {
+    
+    .cta-sub {
+        width: 60%;
+    }
+    
+}

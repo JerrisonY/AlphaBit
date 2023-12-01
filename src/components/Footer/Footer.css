@@ -111,3 +111,55 @@
 .footer-social-c i:hover {
     opacity: 0.5;
 }
+
+
+@media screen and (max-width: 1260px) {
+    
+    .tos-container {
+        padding: 30px 10vw;
+    }
+
+    .footer-container {
+        padding: 75px 15vw 150px;
+
+    }
+    
+}
+
+@media screen and (max-width: 1100px) {
+    
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .footer-social-c {
+        grid-column: 3/4;
+    }
+
+    .f-fourth-c {
+        grid-column: 2/3;
+        margin-top: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 820px) {
+    
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .f-first-c {
+        display: none;
+    }
+
+    .footer-social-c {
+        grid-column: 2/3;
+    }
+
+    .f-fourth-c {
+        grid-column: 1/2;
+    }
+    
+}
