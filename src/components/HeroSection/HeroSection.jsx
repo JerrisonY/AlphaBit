@@ -15,25 +15,9 @@ export default function Example() {
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-      setMobileMenuOpen(false);
-    }
+    section.scrollIntoView({ behavior: 'smooth' });
+    setMobileMenuOpen(false);
   };
-
-  useEffect(() => {
-    // Execute after the component is mounted
-    const handleScroll = () => {
-      // Handle any scroll-related logic here if needed
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <div className="bg-white">
