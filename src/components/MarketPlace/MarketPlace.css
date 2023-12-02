@@ -96,3 +96,22 @@
     background-color: #ffffff80;
     color: #171e2c;
 }
+
+
+@media screen and (max-width: 1200px) {
+    
+    .market-box,
+    .market-header-c {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    
+    .market-box,
+    .market-header-c {
+        width: 90%;
+    }
+
+}
