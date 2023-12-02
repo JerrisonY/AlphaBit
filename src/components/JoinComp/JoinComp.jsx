@@ -1,4 +1,5 @@
 import './JoinComp.css'
+import { NavLink } from 'react-router-dom'
 
 export default function JoinComp() {
     return (
@@ -6,7 +7,7 @@ export default function JoinComp() {
         <span className='cta-header'>Start your crypto journey</span>
         <span className='cta-sub'>AlphaBit makes it easy to get started. Sign up
         today to buy and sell 200+ cryptocurrencies.</span>
-        <button className='cta-btn'>Get started with AlphaBit</button>
+        <NavLink to='/login' className='cta-btn'>Get started with AlphaBit</NavLink>
       </section>
     )
   }

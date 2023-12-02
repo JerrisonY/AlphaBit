@@ -45,12 +45,10 @@ function Footer() {
             <div className='f-first-c'>
                 <img src="/images/logo.svg" alt="" />
                 <p>Take your crypto <br /> trading to the next level.</p>
-                <button className='f-create-btn'>
-                    <NavLink to='/login'>Create account</NavLink>
-                </button>
-                <button className='f-sign-btn' >
-                    <NavLink to='/login'>Sign in</NavLink>
-                </button>
+
+                <NavLink to='/login' className='f-create-btn'>Create account</NavLink>
+                <NavLink to='/login' className='f-sign-btn'>Sign in</NavLink>
+
             </div>
 
             <ul className='f-second-c'>
