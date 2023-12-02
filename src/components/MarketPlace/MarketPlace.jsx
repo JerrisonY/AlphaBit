@@ -35,7 +35,9 @@ function MarketPlace() {
   return (
     <div className='market-container' id='marketplace'>
     
-      <p>Market Overview</p>
+      <div className="market-header-c">
+        Market Overview
+      </div>
       <div className='market-box'>
           <div className='market-categories'>
             <span>Name</span>

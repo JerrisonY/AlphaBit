@@ -5,9 +5,17 @@
     padding: 200px 0;
 }
 
+.market-header-c {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.6em;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
 .market-box {
     background-color: #171e2c;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     padding: 40px;
     border-radius: 10px;
