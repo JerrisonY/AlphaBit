@@ -15,7 +15,7 @@
 
 .market-categories {
     display: grid;
-    grid-template-columns: 60px 4fr 2fr 2fr 2fr;
+    grid-template-columns: 60px 4fr 2fr 2fr 1fr;
     background-color: #2563eb;
     border-radius: 5px;
     padding: 10px;
@@ -33,7 +33,7 @@
 
 .market-item {
     display: grid;
-    grid-template-columns: 60px 4fr 2fr 2fr 2fr;
+    grid-template-columns: 60px 4fr 2fr 2fr 1fr;
     border-bottom: solid 1px rgba(255, 255, 255, 0.2);
     padding: 10px;
     align-items: center;

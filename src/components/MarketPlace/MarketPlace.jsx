@@ -7,17 +7,13 @@ function MarketPlace() {
   const [cryptoData, setCryptoData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
 
-  function numberWithCommas(num) {
-    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  }
-
   function numberCount(num) {
     const newNum = num.toString()
 
     if (newNum.length >= 10) {
-      return newNum.slice(-9) + 'B'
+      return newNum.slice(0,-9) + 'B'
     } else if (newNum.length >= 7) {
-      return newNum.slice(-6) + 'M'
+      return newNum.slice(0,-6) + 'M'
     } else {
       return newNum;
     }
