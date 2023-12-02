@@ -11,6 +11,18 @@ function MarketPlace() {
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
+  function numberCount(num) {
+    const newNum = num.toString()
+
+    if (newNum.length >= 10) {
+      return newNum.slice(-9) + 'B'
+    } else if (newNum.length >= 7) {
+      return newNum.slice(-6) + 'M'
+    } else {
+      return newNum;
+    }
+  }
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -29,12 +41,12 @@ function MarketPlace() {
     
       <p>Market Overview</p>
       <div className='market-box'>
-        <div className='market-categories'>
-          <span>Name</span>
-          <span className='price-category'>Price</span>
-          <span className='price-change'>24h</span>
-          <span className='price-cap'>Market Cap</span>
-        </div>
+          <div className='market-categories'>
+            <span>Name</span>
+            <span className='price-category'>Price</span>
+            <span className='price-change'>24h</span>
+            <span className='price-cap'>Market Cap</span>
+          </div>
         {cryptoData.length > 0 ? (
           cryptoData.map((crypto) => (
             <div key={crypto.id} className='market-item'>
@@ -50,20 +62,23 @@ function MarketPlace() {
                   : 'red-text'
                 }
               >{crypto.price_change_percentage_24h.toFixed(2) + '%'}</span>
-              <span className='right-align'>${numberWithCommas(crypto.market_cap)}</span>
+              <span className='right-align'>${numberCount(crypto.market_cap)}</span>
             </div>
           ))
           ) : (
             <p>Loading...</p>
         )}
 
-        <div className="market-btn-c">
-          <button onClick={() => setCurrentPage((prevPage) => prevPage - 1)}>
-            <i class="fa-solid fa-caret-left fa-xl"></i>
-          </button>
-          <button onClick={() => setCurrentPage((prevPage) => prevPage + 1)}>
-            <i class="fa-solid fa-caret-right fa-xl"></i>
-          </button>
+        <div className="market-bottom-c">
+          <p>*If loading, it's due to the API call limit being reached. Please try again in 5 minutes</p>
+          <div className='market-btn-c'>  
+            <button onClick={() => setCurrentPage((prevPage) => prevPage - 1)}>
+              <i class="fa-solid fa-caret-left fa-xl"></i>
+            </button>
+            <button onClick={() => setCurrentPage((prevPage) => prevPage + 1)}>
+              <i class="fa-solid fa-caret-right fa-xl"></i>
+            </button>
+          </div>
         </div>
         
       </div>        

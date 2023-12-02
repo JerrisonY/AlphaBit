@@ -9,7 +9,7 @@
     background-color: #171e2c;
     width: 50%;
     margin: 0 auto;
-    padding: 50px;
+    padding: 40px;
     border-radius: 10px;
 }
 
@@ -62,9 +62,16 @@
     text-align: right;
 }
 
-.market-btn-c {
-    text-align: right;
+.market-bottom-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 30px;
+}
+
+.market-bottom-c p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.7em;
 }
 
 .market-btn-c button {

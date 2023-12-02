@@ -120,7 +120,7 @@ export default function Example() {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-md leading-6 text-gray-400 ring-1 ring-gray-400 hover:ring-gray-400">
               Now partnered with Discord.{' '}
-              <a href="#" className="font-semibold text-blue-600 transition duration-300 hover:text-blue-800">
+              <a href='https://discord.com/' target='_blank' className="font-semibold text-blue-600 transition duration-300 hover:text-blue-800">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
