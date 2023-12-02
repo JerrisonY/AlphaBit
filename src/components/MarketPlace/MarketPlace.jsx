@@ -22,7 +22,7 @@ function MarketPlace() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=${currentPage}&sparkline=false`);
+        const response = await axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=15&page=${currentPage}&sparkline=false`);
         setCryptoData(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -57,7 +57,9 @@ function MarketPlace() {
                   ? 'green-text'
                   : 'red-text'
                 }
-              >{crypto.price_change_percentage_24h.toFixed(2) + '%'}</span>
+              >
+                {crypto.price_change_percentage_24h.toFixed(2) + '%'}
+              </span>
               <span className='right-align'>${numberCount(crypto.market_cap)}</span>
             </div>
           ))
