@@ -1,5 +1,6 @@
 import React from 'react'
 import './LoginPage.css'
+import { NavLink } from 'react-router-dom'
 
 function LoginPage() {
   return (
@@ -9,38 +10,47 @@ function LoginPage() {
                 <img src="/images/logo.svg" alt="" />
                 <span className='login-header'>Sign in to your account</span>
                 <span>
-                    <span>Not a member? </span>
-                    <span> Start a 14 day free trial</span>
+                    <span className='gray'>Not a member? </span>
+                    <NavLink className='trial' to='/' > Start a 14 day free trial</NavLink>
                 </span>
 
-                <span>Email Address</span>
-                <input 
-                    id='email'
-                    name='email'
-                    type="email" 
-                    required
-                />
-                <span>Password</span>
-                <input 
-                    id='password'
-                    name='password'
-                    type="password" 
-                    required
-                />
+                <div className='l-email-c'>
+                    <span>Email address</span>
+                    <input 
+                        id='email'
+                        name='email'
+                        type="email" 
+                        required
+                    />
+                </div>
+                <div className="l-pass-c">
+                    <span>Password</span>
+                    <input 
+                        id='password'
+                        name='password'
+                        type="password" 
+                        required
+                    />
+                </div>
+                
                 <div className='forgot-pass-c'>
-                    <div>
+                    <div className='forgot-inner-c'>
                         <input 
                             type="checkbox"
                         />
                         <span>Remember me</span>
                     </div>
-                     <span className='forgot-pass'>Forgot password?</span>
+                    <NavLink className='forgot-pass' to='/'>Forgot password?</NavLink>
                 </div>
-                <button>Sign in</button>
-                <span>Or continue with</span>
-                <div>
-                    <button>Twitter</button>
-                    <button>GitHub</button>
+                <button className='signin-btn'>Sign in</button>
+                <span className='signin-cont'>Or continue with</span>
+                <div className='signin-btn-c'>
+                    <a className='twitter-btn' href='https://twitter.com/' target='_blank'>
+                        <i class="fa-brands fa-twitter"></i> Twitter
+                    </a>
+                    <a className='git-btn' href='https://github.com/JerrisonY' target='_blank'>
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
                 </div>
             </div>
         </div>
