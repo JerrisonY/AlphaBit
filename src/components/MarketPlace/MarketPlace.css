@@ -1,4 +1,82 @@
 .market-container {
     background-color: #111827;
     color: white;
+    width: 100%;
+    padding: 200px 0;
+}
+
+.market-box {
+    background-color: #171e2c;
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.market-categories {
+    display: grid;
+    grid-template-columns: 60px 4fr 2fr 2fr 2fr;
+    background-color: #2563eb;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+}
+
+.price-category {
+    grid-column: 3;
+}
+
+.price-cap {
+    text-align: right;
+}
+
+.market-item {
+    display: grid;
+    grid-template-columns: 60px 4fr 2fr 2fr 2fr;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    align-items: center;
+
+}
+
+.market-item img {
+    height: 32px;
+}
+
+.crypto-sub {
+    color: rgba(255, 255, 255, 0.4);
+    padding-left: 20px;
+    font-size: 0.9em;
+}
+
+.green-text {
+    color: #0ECB81;
+}
+
+.red-text {
+    color: #F6465D;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.market-btn-c {
+    text-align: right;
+    padding-top: 30px;
+}
+
+.market-btn-c button {
+    border: solid 1px #ffffff80;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.market-btn-c button:hover {
+    border: solid 1px rgba(255, 255, 255, 0);
+    background-color: #ffffff80;
+    color: #171e2c;
 }
