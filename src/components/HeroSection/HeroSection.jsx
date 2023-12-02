@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import './HeroSection.css'
+import { NavLink } from 'react-router-dom'
 
 const navigation = [
   { name: 'Home', href: '#home' },
@@ -59,9 +60,9 @@ export default function Example() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-white">
+            <NavLink to='/login' className="text-sm font-semibold leading-6 text-white">
               Log in <span aria-hidden="true">&rarr;</span>
-            </a>
+            </NavLink>
           </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -99,12 +100,12 @@ export default function Example() {
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
-                    href="#"
+                  <NavLink
+                    to='/login'
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-700 transition duration-300"
                   >
                     Log in
-                  </a>
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -134,15 +135,15 @@ export default function Example() {
                 AlphaBit is the safest place to buy, sell, and manage crypto. Canadian users can now add cash for free with Interac e-Transfer.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
+              <NavLink
+                to='/login'
                 className="rounded-md bg-blue-600 px-3.5 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition duration-300"
               >
                 Get started
-              </a>
-              <a href="#" className="text-lg font-semibold leading-6 text-gray-400 transition duration-300 hover:text-gray-600">
+              </NavLink>
+              <NavLink to='/login' className="text-lg font-semibold leading-6 text-gray-400 transition duration-300 hover:text-gray-600">
                 Sign up <span aria-hidden="true">→</span>
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>

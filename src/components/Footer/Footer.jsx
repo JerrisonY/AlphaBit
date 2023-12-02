@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './Footer.css'
 
 const features = [
@@ -44,8 +45,12 @@ function Footer() {
             <div className='f-first-c'>
                 <img src="/images/logo.svg" alt="" />
                 <p>Take your crypto <br /> trading to the next level.</p>
-                <button className='f-create-btn'><a href='#'>Create account</a></button>
-                <button className='f-sign-btn' ><a href='#'>Sign in</a></button>
+                <button className='f-create-btn'>
+                    <NavLink to='/login'>Create account</NavLink>
+                </button>
+                <button className='f-sign-btn' >
+                    <NavLink to='/login'>Sign in</NavLink>
+                </button>
             </div>
 
             <ul className='f-second-c'>

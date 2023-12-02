@@ -17,11 +17,11 @@
 .login-left-inner-c {
     display: flex;
     flex-direction: column;
-    padding: 100px;
+    padding: 15vh 100px;
 }
 .login-left-inner-c img {
     width: 140px;
-    padding-bottom: 3vh;
+    margin-bottom: 3vh;
 }
 
 .login-header {
