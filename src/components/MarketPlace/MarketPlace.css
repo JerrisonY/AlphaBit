@@ -115,3 +115,28 @@
     }
 
 }
+
+@media screen and (max-width: 770px) {
+    
+    .crypto-sub {
+        display: none;
+    }
+
+    .market-categories,
+    .market-item {
+        grid-template-columns: 60px 3fr 3fr 2fr 1fr;
+    }
+
+    .market-bottom-c p {
+        width: 60%;
+    }
+
+    .market-box {
+        padding: 20px;
+    }
+
+    .market-item {
+        font-size: 0.8em;
+    }
+
+}
